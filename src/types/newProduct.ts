@@ -1,4 +1,4 @@
 export type NewProdResponse = Promise<{
   status: number,
-  data: object,
+  data: object | object[],
 }>;
