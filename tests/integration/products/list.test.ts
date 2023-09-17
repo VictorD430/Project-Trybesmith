@@ -17,10 +17,10 @@ describe('GET /products', function () {
         orderId: 1
       }),
       ProductModel.build({
-        id: 1,
+        id: 2,
         name: "Estátua Gato de prata",
         price: "40 gold",
-        orderId: 1
+        orderId: 2
       })
     ]);
     const res = await chai.request(app).get('/products').send();
@@ -33,10 +33,10 @@ describe('GET /products', function () {
         orderId: 1
       },
       {
-        id: 1,
+        id: 2,
         name: "Estátua Gato de prata",
         price: "40 gold",
-        orderId: 1
+        orderId: 2
       }
     ])
   })
