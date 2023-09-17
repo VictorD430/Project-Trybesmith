@@ -9,7 +9,7 @@ chai.use(chaiHttp);
 
 describe('POST /products', function () { 
   beforeEach(function () { sinon.restore(); });
-  it('produto criado com sucesso', async () => {
+  it('Produto criado com sucesso', async () => {
     const product: Product = { name: 'Produto', price: '20', orderId: 1 };
     sinon.stub(ProductModel, 'create').resolves(ProductModel.build({...product, id: 1}));
     const res = await chai.request(app).post('/products').send(product);

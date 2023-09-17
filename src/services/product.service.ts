@@ -8,7 +8,7 @@ const newProduct = async (product: ProductInputtableTypes): NewProdResponse => {
 
 const getAllProducts = async (): NewProdResponse => {
   const allProducts = await ProductModel.findAll();
-  return { status: 201, data: allProducts };
+  return { status: 200, data: allProducts };
 };
 
 export default {
