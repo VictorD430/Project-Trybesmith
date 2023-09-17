@@ -10,3 +10,11 @@ export type OrderResponse = Promise<{
   status: number,
   data: object | object[],
 }>;
+
+export type LoginResponse = {
+  status: number,
+  data: {
+    token?: string;
+    message?: string;
+  };
+};
